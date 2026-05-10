@@ -1,0 +1,131 @@
+
+.menu {
+            display: flex;
+            justify-content: center;
+            background-color: #D7CCC8; /* Marroncito claro */
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Lista de navegación */
+        .menu ul {
+            display: flex;
+            flex-direction: row; /* Alineación horizontal */
+            gap: 15px;           /* Espacio entre botones */
+            list-style: none;    /* Quita los puntos de la lista */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo de los botones */
+        .menu a {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #5D4037; /* Marroncito oscuro */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;       /* Forma de cápsula/botón */
+            font-weight: 500;
+            transition: all 0.3s ease; /* Suaviza el cambio de color y tamaño */
+        }
+
+        /* Efecto al pasar el mouse */
+        .menu a:hover {
+            background-color: #3e2723; /* Marrón más intenso */
+            transform: translateY(-2px); /* Pequeño salto hacia arriba */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: #845f54
+}   
+
+.tarjeta{
+    width: 300px;
+    transition: 0.3s;
+    background-color:#D7CCC8 ;
+    border-radius: 10px;
+}
+.tarjeta:hover{
+    transform: scale(1.05);
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+h1,h2,h3,p{
+    text-align: center;
+}
+
+.formulario{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.696);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario input,
+ .formulario textarea{
+    padding: 12px;
+    border: none;
+    border-radius: 1px solid gray;
+    font-size: 16px;
+}
+.formulario button{
+    background-color: #0d3f26;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.formulario button:hover{
+    background-color: #197e4d;
+}
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #362621;
+    color: white;
+    margin-top: 30px;
+  
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .galeria{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .tarjeta{
+        width: 90%;
+        max-width: 300px;
+    }
+    .formulario{
+        width: 70%;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
