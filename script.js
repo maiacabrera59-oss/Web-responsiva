@@ -8,8 +8,18 @@ document.querySelector('#boton').onclick = function(){
 }
 let nombre= "Curso de programación web";
 let descripcion= "Aprendemos HTML,CSS y JavaScript.";
-let precio= "$49.99";
+let precio= "49.99";
 
 document.getElementById("nombreProducto").innerHTML = nombre;
 document.getElementById("descripcionProducto").innerHTML = descripcion;
-document.getElementById("precioProducto").innerHTML = "Precio: " + precio;
+document.getElementById("precioProducto").innerHTML = "Precio: $ " + precio;
+
+let titulo= "Curso de programación web";
+let descripcion= "Aprendemos HTML,CSS y JavaScript.";
+let precio= "12.04";
+let estado= "Disponible";
+
+document.getElementById("tituloCurso").innerHTML = titulo;
+document.getElementById("descripcionCurso").innerHTML = descripcion;
+document.getElementById("precioCurso").innerHTML = "Precio: $ " + precio;
+document.getElementById("estadoCurso").innerHTML = "Estado: " + estado;
