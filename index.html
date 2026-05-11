@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Web Responsiva</title>
     <link rel="stylesheet" href="estilo.css">
+
 </head>
 <body>
+    <h1>Mi web</h1>
     <nav class="menu">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -62,15 +64,27 @@
               
         </div>
     </section>
+
+    <section>
+        <h2>Datos cargados desde Js</h2>
+        <div class="tarjeta">
+            <h3 id="nombreProducto"></h3>
+            <p id="descripcionProducto"></p>
+            <p id="precioProducto"></p>
+        </div>
+    </section>
+
     <section id="Contacto">
         <h2>Contacto</h2>
          <form class="formulario">
             <input type="text" placeholder="Ingrese su nombre">
             <input type="email" placeholder="Ingrese su email">
             <textarea placeholder="Escriba un mensaje"></textarea>
-            <button>Enviar</button>
+        
+            <button type="button" id="boton">Enviar</button>
         </form>
     </section>
     <footer> © 2026 Mi Web Responsiva.</footer>
+    <script src="script.js"></script>
 </body>
 </html>
